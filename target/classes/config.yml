@@ -1,0 +1,12 @@
+prefix: '&8[&aBN&8] &7'
+
+missing: '&cYou need to provide a message!'
+#noperms: ''
+
+announcers:
+  - test:
+      call: t
+      aliases:
+        - test
+      permission: BN.test
+      prefix: '&8[&4TEST&8] &7'
