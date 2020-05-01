@@ -50,7 +50,8 @@ public class Main extends Plugin {
             ArrayList aliases = (ArrayList) data.get("aliases");
             getProxy().getPluginManager().registerCommand(this, new CustomCommandAnnouncer(this,
                     java.lang.String.valueOf(data.get("call")), java.lang.String.valueOf(data.get("prefix")),
-                    java.lang.String.valueOf(data.get("permission")))); // (java.lang.String[]) (aliases.toArray(new String[aliases.size()]))
+                    java.lang.String.valueOf(data.get("permissionUse")),
+                    java.lang.String.valueOf(data.get("permissionSee")))); // (java.lang.String[]) (aliases.toArray(new String[aliases.size()]))
             customCommands[count] = java.lang.String.valueOf(data.get("call"));
             count++;
         }

@@ -1,12 +1,24 @@
+# The general prefix that will be called when a command gets executed.
 prefix: '&8[&aBN&8] &7'
 
+# The message that is sent when no content has been provided.
 missing: '&cYou need to provide a message!'
-#noperms: ''
 
+# All announcer commands:
+# call - The name of the command. (/call)
+# permissionUse - The permission to be able to execute the command.
+# permissionSee - The permission to be able to see the announcement.
+# prefix - The prefix for the announcement | Set to '' to disable.
+# Current placeholders:
+#   - member | The executor its name.
 announcers:
   - test:
-      call: t
-      aliases:
-        - test
-      permission: BN.test
+      call: test
+      permissionUse: BN.test
+      permissionSee: BN.test.see
       prefix: '&8[&4TEST&8] &7'
+  - staff:
+      call: sc
+      permissionUse: BN.sc
+      permissionSee: BN.sc.see
+      prefix: '&8[&4&lSC&8] &c{member}&7: &e'
